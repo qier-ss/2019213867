@@ -1,0 +1,53 @@
+ 
+body{
+    margin:0;
+    background-color: rgb(208, 210, 212);
+   height:100vh;
+
+}
+.parent { 
+
+height:100vh;
+display: grid; 
+/* background-color: rgb(208, 210, 212); */
+grid-template-columns: repeat(20, 1fr); 
+grid-template-rows: repeat(2, 2fr) repeat(6, 1fr) 2fr repeat(5, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px; 
+}
+
+.div1 { grid-area: 1 / 3 / 2 / 19; } 
+.div2 { grid-area: 2 / 19 / 10 / 20; } 
+.div3 { grid-area: 2 / 3 / 10 / 7; background-color: white;  position:fixed;} 
+.div4 { grid-area: 2 / 7 / 15 / 19;background-color: white; } 
+.div5 { grid-area: 2 / 7 / 10 / 19;border-bottom:solid 1px rgba(0, 0, 0, 0.329); background-color:white;} 
+.div6 { grid-area: 10 / 7 / 15 / 19; background-color: white;} 
+.div7 { grid-area: 2 / 7 / 3 / 11; background-color: white;} 
+.div8 { grid-area: 3 / 7 / 9 / 19; background-color: white;} 
+.div9 { grid-area: 9 / 7 / 10 / 11; border-bottom:solid 1px rgba(0, 0, 0, 0.329);background-color: white;} 
+.div10 { grid-area: 9 / 15 / 10 / 19;border-bottom:solid 1px rgba(0, 0, 0, 0.329);background-color: white; padding-left:30%} 
+.aboutme{
+   margin-left: 8%;
+   font-size: larger;
+   font-weight: 900;
+   line-height: 100px;
+}
+.text{
+    margin-left: 8%;
+    margin-right: 8%;
+    line-height: 29px;;
+}
+.a1{
+    font-size: 2rem;
+    display:block;
+    margin-left: 20%;
+    margin-top:45%;
+}
+.a1:hover{
+    color:rgb(120, 129, 129);
+    cursor:pointer;
+}
+.b1:hover{
+    cursor:pointer;
+    background-color: rgba(0, 0, 0, 0.74);
+}
