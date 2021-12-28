@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MySort</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="plugin/wow/css/animate.min.css">
+    <script src="plugin/wow/js/wow.min.js" defer></script>
+    <script src="plugin/particles/particles.min.js" defer></script>
+    <script src="js/scrollReveal.js" defer></script>
+    <script src="js/home/particles.js" defer></script>
+    <script src="js/lib/jquery-3.1.1.min.js" defer></script>
+    <script src="js/visualizer/code/templates/selectSortTemplate.js" defer></script>
+    <script src="js/visualizer/code/templates/bubbleSortTemplate.js" defer></script>
+    <script src="js/visualizer/code/preference.js" defer></script>
+    <script src="js/visualizer/code/show_hide.js" defer></script>
+    <script src="js/visualizer/code/edit.js" defer></script>
+    <script src="js/visualizer/frames.js" defer></script>
+    <script src="js/visualizer/sort.js" defer></script>
+    <script src="js/visualizer/animate.js" defer></script>
+    <script src="js/visualizer/main.js" defer></script>
+
+
+</head>
+
+<body>
+    <!-- header区域 -->
+    <nav class="nav-bar sticky">
+        <div class="nav-logo">Logo</div>
+        <div class="nav-menu">
+            <a href="#home" class="active">Home</a>
+            <a href="#howItWorks">How It Works</a>
+            <a href="#visualizer">Visualizer</a>
+        </div>
+    </nav>
+
+    <div class="app-container">
+        <div id="home" class="home">
+            <div class="content">
+                <div class="wow slideInLeft title" data-wow-duration="3s" data-wow-delay="0.2s">Sorting algorithms made
+                    easy</div>
+                <div class="wow slideInRight description" data-wow-duration="3s" data-wow-delay="0.2s">Visualize the
+                    step
+                    by step process of popular sorting
+                    algorithms!</div>
+            </div>
+            <div class="wrapper" id="particles">
+            </div>
+        </div>
+        <div id="howItWorks" class="how-it-works">
+            <div class="wow slideInLeft section-header" data-wow-duration="3s" data-wow-delay="0.01s">How it Works</div>
+            <div class="wow slideInRight section-header-line" data-wow-duration="3s" data-wow-delay="0.01s">
+                <div></div>
+            </div>
+
+            <div class="how-it-works-container">
+                <img class="how-it-works-picture" src="images/how-it-works-picture.jpg" alt="">
+                <div class="stepcontainer step1">
+                    <div class="step-picture">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
+                            color="#11C2C9" height="70" width="70" xmlns="http://www.w3.org/2000/svg"
+                            style="color: rgb(17, 194, 201);">
+                            <path
+                                d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h360c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H184V184h656v320c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8V144c0-17.7-14.3-32-32-32zM653.3 599.4l52.2-52.2a8.01 8.01 0 0 0-4.7-13.6l-179.4-21c-5.1-.6-9.5 3.7-8.9 8.9l21 179.4c.8 6.6 8.9 9.4 13.6 4.7l52.4-52.4 256.2 256.2c3.1 3.1 8.2 3.1 11.3 0l42.4-42.4c3.1-3.1 3.1-8.2 0-11.3L653.3 599.4z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="step-title">1. Select the Algorithm</div>
+                    <div class="step-description">Visualize the algorithm of your choice.</div>
+                </div>
+                <div class="stepcontainer step2">
+                    <div class="step-picture"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                            viewBox="0 0 1024 1024" color="#5466FF" height="70" width="70"
+                            xmlns="http://www.w3.org/2000/svg" style="color: rgb(84, 102, 255);">
+                            <path
+                                d="M512.5 390.6c-29.9 0-57.9 11.6-79.1 32.8-21.1 21.2-32.8 49.2-32.8 79.1 0 29.9 11.7 57.9 32.8 79.1 21.2 21.1 49.2 32.8 79.1 32.8 29.9 0 57.9-11.7 79.1-32.8 21.1-21.2 32.8-49.2 32.8-79.1 0-29.9-11.7-57.9-32.8-79.1a110.96 110.96 0 0 0-79.1-32.8zm412.3 235.5l-65.4-55.9c3.1-19 4.7-38.4 4.7-57.7s-1.6-38.8-4.7-57.7l65.4-55.9a32.03 32.03 0 0 0 9.3-35.2l-.9-2.6a442.5 442.5 0 0 0-79.6-137.7l-1.8-2.1a32.12 32.12 0 0 0-35.1-9.5l-81.2 28.9c-30-24.6-63.4-44-99.6-57.5l-15.7-84.9a32.05 32.05 0 0 0-25.8-25.7l-2.7-.5c-52-9.4-106.8-9.4-158.8 0l-2.7.5a32.05 32.05 0 0 0-25.8 25.7l-15.8 85.3a353.44 353.44 0 0 0-98.9 57.3l-81.8-29.1a32 32 0 0 0-35.1 9.5l-1.8 2.1a445.93 445.93 0 0 0-79.6 137.7l-.9 2.6c-4.5 12.5-.8 26.5 9.3 35.2l66.2 56.5c-3.1 18.8-4.6 38-4.6 57 0 19.2 1.5 38.4 4.6 57l-66 56.5a32.03 32.03 0 0 0-9.3 35.2l.9 2.6c18.1 50.3 44.8 96.8 79.6 137.7l1.8 2.1a32.12 32.12 0 0 0 35.1 9.5l81.8-29.1c29.8 24.5 63 43.9 98.9 57.3l15.8 85.3a32.05 32.05 0 0 0 25.8 25.7l2.7.5a448.27 448.27 0 0 0 158.8 0l2.7-.5a32.05 32.05 0 0 0 25.8-25.7l15.7-84.9c36.2-13.6 69.6-32.9 99.6-57.5l81.2 28.9a32 32 0 0 0 35.1-9.5l1.8-2.1c34.8-41.1 61.5-87.4 79.6-137.7l.9-2.6c4.3-12.4.6-26.3-9.5-35zm-412.3 52.2c-97.1 0-175.8-78.7-175.8-175.8s78.7-175.8 175.8-175.8 175.8 78.7 175.8 175.8-78.7 175.8-175.8 175.8z">
+                            </path>
+                        </svg></div>
+                    <div class="step-title">2. Select Settings</div>
+                    <div class="step-description">Adjust the speed of the visualizer and array size.</div>
+                </div>
+                <div class="stepcontainer step3">
+                    <div class="step-picture"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                            viewBox="0 0 14 16" color="#5466FF" height="70" width="70"
+                            xmlns="http://www.w3.org/2000/svg" style="color: rgb(84, 102, 255);">
+                            <path fill-rule="evenodd"
+                                d="M14 8A7 7 0 1 1 0 8a7 7 0 0 1 14 0zm-8.223 3.482l4.599-3.066a.5.5 0 0 0 0-.832L5.777 4.518A.5.5 0 0 0 5 4.934v6.132a.5.5 0 0 0 .777.416z">
+                            </path>
+                        </svg></div>
+                    <div class="step-title">3. Start Sorting</div>
+                    <div class="step-description">Press the play button to start the step by step sorting process.</div>
+                </div>
+                <div class="stepcontainer step4">
+                    <div class="step-picture"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                            viewBox="0 0 24 24" color="#11C2C9" height="70" width="70"
+                            xmlns="http://www.w3.org/2000/svg" style="color: rgb(17, 194, 201);">
+                            <path
+                                d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z">
+                            </path>
+                        </svg></div>
+                    <div class="step-title">4. Fast-forward, Backtrack, and Replay</div>
+                    <div class="step-description">Replay the entire sorting process or walk through the algorithm one
+                        step at a time with these functions.</div>
+                </div>
+            </div>
+        </div>
+        <div id="visualizer" class="visualizer">
+            <div class="visualizer-header-box">
+                <div class="wow slideInLeft section-header" data-wow-duration="3s" data-wow-delay="0.012s">Visualizer
+                </div>
+                <div class="wow slideInRight section-header-line" data-wow-duration="3s" data-wow-delay="0.01s">
+                    <div></div>
+                </div>
+            </div>
+            <div class="visualizer-box">
+                <div class="nav">
+                    <div class="sort">选择排序</div>
+                    <div class="sort">冒泡排序</div>
+                    <div class="sort">快速排序</div>
+                    <div class="sort">归并排序</div>
+                    <div class="sort">插入排序</div>
+                    <div class="sort">希尔排序</div>
+                </div>
+                <div id="container1"></div>
+                <div id="container2"></div>
+                <div id="container3"></div>
+                <div id="container4"></div>
+
+                <div id="controller">
+                    <input type="text" id="array" name="">
+                    <div class="button" id="random">随机</div>
+                    <div class="button" id="startAndPause">开始</div>
+                    <div class="button" id="prev">上一步</div>
+                    <div class="button" id="next">下一步</div>
+                    <div id="progressBar">
+                        <div class="slider"></div>速度
+                    </div>
+                    <div id="speedBar"></div>
+                </div>
+            </div>
+            <div class="code">
+                <div class="main">
+                </div>
+                <div class="code-template">
+                    <div class="selector">
+                        <div class="selector_active">Java</div>
+                        <div>JavaScript</div>
+                        <div>Python</div>
+                        <div>C/C++</div>
+                    </div>
+                    <div class="edit">
+                        <div class="ace-gutter"></div>
+                        <div class="ace-scroller"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-container">
+        <div class="triangle"></div>
+        <div class="links-container">
+            <a href="javascript:void(0);"
+                style="position:relative;top:-20px;left:-15px;font-size:2rem;font-weight:200;cursor: default;">THANK
+                YOU</a>
+            <a href="#home">Home</a>
+            <a href="#howItWorks">How It Works</a>
+            <a href="#visualizer">Visualizer</a>
+        </div>
+    </div>
+</body>
+
+</html>
